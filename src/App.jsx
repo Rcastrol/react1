@@ -1,22 +1,16 @@
-import './App.css';
-import NavBar from './components/NavBar';
+import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './index';
-import ItemListContainer from './components/ItemListContainer';
 
-function App() {
+import MainRouter from "./routes/MainRouter";
 
-  const myFunction = () => {
-    console.log("Hola a todos")
-  };
-  
+const App = () => {
 
   return (
     <div className="App">
-      <NavBar />
-      <ItemListContainer greeting= "Soy un componente de React"/>
+      <MainRouter />
+      
     </div>
   );
-}
+};
 
 export default App;
