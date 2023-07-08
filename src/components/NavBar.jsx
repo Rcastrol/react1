@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from './CartWidget';
 import { Link } from "react-router-dom";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const NavBar = () => {
   return (
@@ -17,7 +17,7 @@ const NavBar = () => {
           <Nav className="me-auto">
             <Nav.Link href="#home">
               <Link to="/">Home</Link>
-            </Nav.Link>
+              </Nav.Link>
             <NavDropdown  title="Categorias" id="basic-nav-dropdown">
               <NavDropdown.Item>
                 <Link to="/category/groceries">groceries</Link>
@@ -31,8 +31,9 @@ const NavBar = () => {
             </NavDropdown>
           </Nav>
           <CartWidget />
-        </Navbar.Collapse>
-      </Container>
+          </Navbar.Collapse>
+          <Navbar bg="dark" expand="lg" className="navbar-dark"/>
+       </Container>
     </Navbar>
   );
 };

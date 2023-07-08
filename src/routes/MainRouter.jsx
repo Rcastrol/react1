@@ -6,7 +6,7 @@ import Home from "../pages/Home";
 import Category from "../pages/Category";
 import Item from "../pages/Item";
 import NavBar from "../components/NavBar";
-
+import Cart from "../pages/Cart";
 const MainRouter = () => {
   return (
     <Router>
@@ -15,7 +15,8 @@ const MainRouter = () => {
         <Route path="/" element={<Home />} />
         <Route path="/category/:categoryId" element={<Category />} />
         <Route path="/item/:itemId" element={<Item />} />
-      </Routes>
+        <Route path="/cart" element={<Cart />} />
+        </Routes>
     </Router>
   );
 };

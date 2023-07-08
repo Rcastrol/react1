@@ -28,6 +28,9 @@
   color: #61fb7b;
 }
 
+.my-class {
+  background-color: #61dafb;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +38,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 8px;
+  }
+}
+
+/* Estilos para el modo oscuro */
+.dark-mode {
+  background-color: grgb(54, 255, 47);
+  color: rgb(255, 69, 0);
+}
+
+.dark-mode .container {
+  /* Estilos específicos para el modo oscuro */
+  background-color: rgb(54, 255, 47);
+  color: rgb(0, 17, 255);
 }
